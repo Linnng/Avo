@@ -1,0 +1,347 @@
+.banner_wrap{
+    width: 100%;
+    height: 0; 
+    /* padding-bottom: 57%; */
+    position: absolute;
+} 
+video{
+    height: 100%;
+    width: auto;
+    position: absolute;
+}
+.banner_text{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 45vh;
+}
+.banner_text_text{
+    padding: 15px;
+    /* font-size: 60px; */
+    background-color: rgba(167, 29, 29, .8);
+    color: #fff
+}
+
+/* aircrafts */
+div[class*="col-"]{
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.home_ac_number{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+
+    font-family: 'Yeseva One', cursive;
+    font-size: 80px ;
+    color:#aa5d5f;
+}
+.home_ac_verticalLine{
+    width: 2px;
+    height: 80px;
+    background-color: #AEA49F;
+    position: absolute;
+    bottom: -30px;
+    left: 18%;
+    z-index: 5;
+}
+.ac_title{
+    position: absolute;
+    bottom: -60px;
+    left: 17%;
+}
+
+
+
+.img_grid{
+    width: 100%;
+    height: 0;
+    padding-bottom: 68%;
+    overflow: hidden;
+    position: relative;
+}
+.img_grid img{
+    position: absolute;
+    top: 0;
+    left:0;
+
+    filter:grayscale(1);
+    transition: .5s;
+}
+.img_grid img:hover{
+    filter:grayscale(0);
+}
+
+/* mid sentence */
+.rec_dot_box_top, .rec_dot_box_down{
+    width: 60px;
+    height: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: auto;
+}
+.rec_dot_h{
+    width: 24px;
+    height: 24px;
+    background-color: #aa5d5f;
+}
+.rec_dot_up, .rec_dot_down{
+    width: 8px;
+    height: 16px;
+}
+.rec_dot_up{
+    border-left: 16px solid #aa5d5f;
+    border-radius: 100% 0px 0px 0px;
+}
+.rec_dot_down{
+    border-right: 16px solid #aa5d5f;
+    border-radius: 0px 0px 100% 0px;
+}
+.home_midSentence_text{
+    font-family: 'Yeseva One', cursive;
+    color: #5F5F5F;
+
+    margin-top: 40px;
+}
+.home_midSentence_author{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.home_manu_box{
+    display: none;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.manu_detail_title{
+    margin-bottom: 8px;
+}
+.home_manu_detail_img{
+    display: block;
+    padding: 0 50px 0 10px;
+    box-sizing: border-box;
+}
+.home_manu_detail_text{
+    display: block;
+    padding: 50px 10px 50px 0;
+    box-sizing: border-box;
+
+    position: relative;
+}
+.moreInfo_btn_manu{
+    width: 160px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+.moreInfo_btn_manu a{
+    background-color: #aa5d5f;
+    margin: 0;
+}
+.active{
+    display: flex;
+}
+
+.home_slider_wrap{
+    width: 100%;
+    height: 0;
+    padding-bottom: 55%;
+    position: relative;
+    overflow: hidden;
+}
+.home_slider_wrap img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+@media screen and (max-width: 767px){
+    .home_banner .container{
+        height: 45vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .banner_wrap{
+        padding-bottom: 100%;
+    }
+    .banner_text{
+        top: 30%;
+    }
+    .banner_text_text{
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    div[class*="col-"]{
+        padding: 20px;
+        margin-top: 40px;
+    }
+    .home_ac_number{
+        top: -30px;
+    }
+    .home_ac_verticalLine{
+        bottom: -20px;
+    }
+    .ac_title{
+        bottom: -50px;
+    }
+    
+    .img_grid img{
+        filter:grayscale(0);
+    }
+
+    .home_manu_box{
+        display: none;
+        margin-top: 30px;
+    }
+    .active{
+        display: flex;
+    }
+    .home_manu_detail_img{
+        padding: 0 10px;
+        margin: auto;
+    }
+    .home_manu_detail_text{
+        padding: 10px 10px 60px 20px;
+        margin: auto;
+    }
+    .moreInfo_btn_manu{
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (min-width: 768px){
+    .home_banner .container{
+        height: 50vh;
+        margin-top: -75px;
+        position: relative;
+        overflow: hidden;
+    }
+    .banner_wrap{
+        padding-bottom: 100%;
+    }
+    .banner_text{
+        top: 45%;
+    }
+    .banner_text_text{
+        font-size: 45px;
+    }
+    
+    div[class*="col-"]{
+        padding: 10px;
+        margin-top: 40px;
+    }
+    .home_ac_number{
+        top: -30px;
+        font-size: 60px;
+    }
+    .home_ac_verticalLine{
+        height: 60px;
+        bottom: -20px;
+    }
+    .ac_title{
+        bottom: -50px;
+    }
+    .img_grid img{
+        filter:grayscale(0);
+    }
+
+    .home_manu_detail_img{
+        padding: 0 0 0 10px;
+    }
+    .home_manu_detail_text{
+        padding: 20px 0 0 10px;
+    }
+    .moreInfo_btn_manu{
+        bottom: 10px;
+        left: 10px;
+    }
+
+}
+@media screen and (min-width: 850px){
+    .home_manu_detail_text{
+        padding: 35px 0 0 10px;
+    }
+    .moreInfo_btn_manu{
+        bottom: 20px;
+        left: 10px;
+    }
+}
+@media screen and (min-width: 950px){
+    .home_manu_detail_text{
+        padding: 35px 0 0 30px;
+    }
+    .moreInfo_btn_manu{
+        bottom: 30px;
+        left: 30px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .home_banner .container{
+        height: 100vh;
+        margin-top: -75px;
+        position: relative;
+        overflow: hidden;
+    }
+    .banner_wrap{
+        padding-bottom: 57%;
+    }
+    .banner_text{
+        top: 40vh;
+    }
+    .banner_text_text{
+        font-size: 60px;
+    }
+
+    .img_grid{
+        width: 100%;
+        height: 0;
+        padding-bottom: 68%;
+        overflow: hidden;
+        position: relative;
+    }
+    .img_grid img{
+        position: absolute;
+        top: 0;
+        left:0;
+    
+        filter:grayscale(1);
+        transition: .5s;
+    }
+    .img_grid img:hover{
+        filter:grayscale(0);
+    }
+
+    .manu_detail_title{
+        margin-bottom: 8px;
+    }
+    .home_manu_detail_img{
+        padding: 0 50px 0 10px;
+    }
+    .home_manu_detail_text{
+        padding: 50px 10px 50px 0;
+    }
+    .moreInfo_btn_manu{
+        bottom: 50px;
+        left: 0;
+    }
+    .active{
+        display: flex;
+    }
+}

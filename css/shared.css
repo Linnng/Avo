@@ -1,0 +1,466 @@
+/* 
+gray: #   rgba(242, 243, 240, 1)
+*/
+/* https://www.w3schools.com/bootstrap4/bootstrap_navs.asp */
+
+
+/* *{outline: red 1px solid;} */
+
+.clearfix{ clear: both;}
+
+
+/* grid */
+.col-1{ width: 8.333333%;}
+.col-2{ width: 16.666666%;}
+.col-3{ width: 25%;}
+.col-4{ width: 33.333333%;}
+.col-5{ width: 41.666666%;}
+.col-6{ width: 50%;}
+.col-7{ width: 58.333333%;}
+.col-8{ width: 66.666666%;}
+.col-9{ width: 75%;}
+.col-10{ width: 83.333333%;}
+.col-11{ width: 91.666666%;}
+.col-12{ width: 100%;}
+
+@media screen and (min-width: 768px){
+    .col-md-1{ width: 8.333333%;}
+    .col-md-2{ width: 16.666666%;}
+    .col-md-3{ width: 25%;}
+    .col-md-4{ width: 33.333333%;}
+    .col-md-5{ width: 41.666666%;}
+    .col-md-6{ width: 50%;}
+    .col-md-7{ width: 58.333333%;}
+    .col-md-8{ width: 66.666666%;}
+    .col-md-9{ width: 75%;}
+    .col-md-10{ width: 83.333333%;}
+    .col-md-11{ width: 91.666666%;}
+    .col-md-12{ width: 100%;}
+}
+
+@media screen and (min-width: 1200px){
+    .col-xl-1{ width: 8.333333%;}
+    .col-xl-2{ width: 16.666666%;}
+    .col-xl-3{ width: 25%;}
+    .col-xl-4{ width: 33.333333%;}
+    .col-xl-5{ width: 41.666666%;}
+    .col-xl-6{ width: 50%;}
+    .col-xl-7{ width: 58.333333%;}
+    .col-xl-8{ width: 66.666666%;}
+    .col-xl-9{ width: 75%;}
+    .col-xl-10{ width: 83.333333%;}
+    .col-xl-11{ width: 91.666666%;}
+    .col-xl-12{ width: 100%;}
+}
+
+
+/* btn link */
+
+.moreInfo_btn a{
+    display: block;
+    width: 140px;
+    padding: 10px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #aa5d5f;
+    transition: .2s;
+    color: white;
+}
+.moreInfo_btn a:hover{
+    background-color: #aa5d5f;
+}
+
+/* font */
+.title_second{
+    display: block;
+    text-align: center;
+}
+.title_font{
+    font-family: 'Abril Fatface', cursive;
+    color: #5f5f5f;
+    letter-spacing: .5px;
+}
+.text{
+    color: #5f5f5f;
+    font-family: 'Work Sans', sans-serif; 
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+    h1{
+        font-size: 30px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    h2{
+        font-size: 24px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    h3{
+        font-size: 20px;
+        margin: 6px 0;
+    }
+    h4{font-size: 16px;}
+    p{
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+@media screen and (min-width: 768px){
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    h2{
+        font-size: 22px;
+        text-align: center;
+    }
+    h3{
+        font-size: 18px;
+        /* text-align: center; */
+    }
+    h4{font-size: 14px;}
+    p{font-size: 16px;}
+}
+@media screen and (min-width: 1200px){
+    h1{
+        margin: 20px;
+        font-size: 50px;
+        text-align: center;
+    }
+    h2{
+        margin: 20px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.1;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 1.1;
+        /* text-align: center; */
+    }
+    h4{
+        font-size: 18px;
+        line-height: 1.1;
+    }
+    p{
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+
+
+/* padding */
+section{
+    padding: 40px 0;
+    margin: auto;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* shared */
+#menu-control{
+    position: absolute;
+    opacity: 0;
+}
+.header{
+    width: 100%;
+    height: 0;
+    padding-bottom: 55px;
+    overflow: hidden;
+    position: relative;
+}
+.header > .container{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 5px 35px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+    
+    position: fixed;
+    z-index: 1000;
+}
+.header .container::before{
+    height: 100%;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo{
+    height: 45px;
+    width: 122px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+/* burger */
+.hb{
+    display: none;
+}
+.header-nav{
+    position: absolute;
+}
+
+.avo_about .container{
+    border-top: 3px solid #aea49f;
+    display: flex;
+    justify-content: space-between;
+}
+.avo_about_img{
+    width: 12.5%;
+    height: 0;
+    padding-bottom: 12.5%;
+    overflow: hidden;
+    position: relative;
+}
+.avo_about_img img{
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* phone */
+@media screen and (max-width: 767px){
+    /* padding */
+    .pad{
+        padding: 30px 2%;
+    }
+    /* AirVoyage © 2019 */
+    .copyright{
+        font-size: 16px;
+    }
+
+
+
+    .hb{
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        cursor: pointer;
+    }
+    .hb .hb_line{
+        width: 40px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: gray;
+        position: absolute;
+        transition: all .5s ease-in-out;
+    }
+
+    .hb .hb_line:nth-child(1){ top: 6px;}
+    .hb .hb_line:nth-child(2){ top: 18px;}
+    .hb .hb_line:nth-child(3){ top: 30px;}
+
+    .hb.change .hb_line:nth-child(1){ transform: rotate(405deg) translate(8px, 8px); }
+    .hb.change .hb_line:nth-child(2){ transform: rotateY(90deg); }
+    .hb.change .hb_line:nth-child(3){ transform: rotate(135deg) translate(-8px, 8px); }
+
+    /* checked */
+    .header-nav{
+        display: block;
+        padding: 15% 0;
+        width: 100%;
+        height: 100vh;
+        top: 55px;
+        right: -100%;
+        background-color: #fff;
+        transition: right .5s;
+    }
+    .header-nav .list_item{
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        padding: 10px 20px;
+        color: gray;
+    }
+    #menu-control:checked ~ .header .header-nav{
+        right: 0;
+    }
+
+
+    /* about */
+    .avo_about{
+        margin-top: 50px;
+    }
+    .avo_about .container{
+        padding-top: 15px;
+    }
+}
+
+/* ipad */
+@media screen and (min-width: 768px){
+    .header{
+        padding-bottom: 75px;
+    }
+    /* padding */
+    .pad{
+        padding: 40px 10%;
+    }
+
+    /* AirVoyage © 2019 */
+    .copyright{
+        right: -20px;
+    }
+
+    /* tool bar */
+    .header-nav{
+        right: 30px;
+        display: inline-block;
+        line-height: 45px;
+    }
+    .list_item{
+        display: inline-block;
+        font-size: 18px;
+        position: relative;
+        transition: 0.3s;
+    }
+    .list_item:not(:last-child){
+        margin-right: 30px;
+    }
+    
+    .main::after{
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+        width: 100%;
+        border-width:0px 0px 8px 0px;
+        border-style: solid;
+        border-color: #17a9d8;
+        opacity: .7;
+        content: " ";
+        z-index: -1;
+    }
+
+    /* AirVoyage © 2019 */
+    .copyright{
+        transform: rotate(90deg);
+        position: fixed;
+        top: 50vh;
+        z-index: 1000;
+    }
+}
+@media screen and (min-width: 1200px){
+    /* padding */
+    .pad{
+        padding: 40px 12%;
+    }
+    .list_item::after{
+        width: 0;
+        transition: 0.3s;
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+        border-width:0px 0px 8px 0px;
+        border-style: solid;
+        border-color: #17a9d8;
+        opacity: .7;
+        content: " ";
+        z-index: -1;
+    }
+    .list_item:hover::after, .list_item.main::after{
+        width: 100%;
+    }
+
+    /* ------------------------ */
+    .list_item a{
+        display: block;
+        padding: 2px 5px;
+    }
+    .header-nav > ul > li > ul{
+        position: absolute;
+        display: none;
+    }
+    .header-nav > ul > li:hover > ul{
+        display: block;
+    }
+    .header-nav > ul > li > ul > li > ul{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+    .header-nav > ul > li > ul > li:hover > ul{
+        display: block;
+    }
+
+
+    /* about */
+    .avo_about{
+        margin-top: 100px;
+        width: 60%;
+    }
+    .avo_about .container{
+        padding-top: 25px;
+    }
+}
+
+
+
+/* breadcrumbs */
+.breadcrumbs{
+    font-size: 12px;
+    padding-left: 30px;
+    line-height: 20px;
+
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    left: 0;
+
+    position: fixed;
+    z-index: 10;
+}
+.breadcrumbs ul li{
+    display: inline-block;
+}
+.breadcrumbs ul li:not(:last-child){
+    margin-right: 10px;
+}
+
+
+/* footer */
+footer{
+    padding: 10px;
+    text-align: center;
+}
+footer li{
+    padding: 5px;
+}
+
+.halfBackground{
+    background-image: url(../img/halfBackground.png);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.topBackground{
+    background-image: url(../img/topBackground.png);
+    background-position: top center;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 767px){
+    .halfBackground_in767{
+        background-image: url(../img/halfBackground.png);
+        background-position: center;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}

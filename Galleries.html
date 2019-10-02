@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AirVoyage: Galleries</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat|Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/Galleries.css">
+</head>
+<body>
+    <input type="checkbox" id="menu-control">
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/Logo.png" alt="Avo_logo">
+                </a>
+            </div>
+
+            <label for="menu-control" class="hb" id="hb">
+                <span class="hb_line"></span>
+                <span class="hb_line"></span>
+                <span class="hb_line"></span>
+            </label>
+            
+            <nav class="header-nav">
+                <ul>
+                    <li class="list_item"><a href="Aircrafts.html" class="text">Aircrafts</a></li>
+                    <li class="list_item"><a href="Manufacturers.html" class="text">Manufacturers</a></li>
+                    <li class="list_item"><a href="News.html" class="text">News</a></li>
+                    <li class="list_item"><a href="Events.html" class="text">Events</a></li>
+                    <li class="list_item main"><a href="Galleries.html" class="text">Galleries</a></li>
+                    <li class="list_item"><a href="connect.html" class="text">Connect</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copyright text">AirVoyage © 2019</div>
+    </header>
+
+    <input type="checkbox" id="gal-control">
+    <section class="gal_menu_wrap">
+        <label for="gal-control" class="gal_hb" id="gal_hb">Check More</label>
+        
+        <div class="gal_filter">
+            <span class="title_font fil_title" id="commercial">
+                <i class='fas bright' id="fas0">&#xf072;</i>Commercial
+            </span>
+            <ul id="fil_commer">
+                <li><button class="btn active" onclick="filterSelection('Baluga')">Baluga</button></li>
+                <li><button class="btn" onclick="filterSelection('A220')">A220</button></li>
+                <li><button class="btn" onclick="filterSelection('A320')">A320</button></li>
+                <li><button class="btn" onclick="filterSelection('A321')">A321</button></li>
+                <li><button class="btn" onclick="filterSelection('A330')">A330</button></li>
+                <li><button class="btn" onclick="filterSelection('A350')">A350</button></li>
+                <li><button class="btn" onclick="filterSelection('A380')">A380</button></li>
+                <li><button class="btn" onclick="filterSelection('B-747')">B-747</button></li>
+                <li><button class="btn" onclick="filterSelection('B-767')">B-767</button></li>
+                <li><button class="btn" onclick="filterSelection('B-777')">B-777</button></li>
+                <li><button class="btn" onclick="filterSelection('B-787')">B-787</button></li>
+            </ul>
+
+            <div class="clearfix"></div>
+            <span class="title_font fil_title" id="defense">
+                <i class='fas' id="fas1">&#xf072;</i>Defense
+            </span>
+            <ul id="fil_defense">
+                <li><button class="btn" onclick="filterSelection('B-52')">B-52</button></li>
+                <li><button class="btn" onclick="filterSelection('C-17')">C-17</button></li>
+                <li><button class="btn" onclick="filterSelection('F-15EX')">F-15EX</button></li>
+                <li><button class="btn" onclick="filterSelection('FA-18')">FA-18</button></li>
+            </ul>
+
+            <div class="clearfix"></div>
+            <span class="title_font fil_title" id="helicopters">
+                <i class='fas' id="fas2">&#xf072;</i>Helicopters
+            </span>
+            <ul id="fil_helicopters">
+                <li><button class="btn" onclick="filterSelection('AH-6')">AH-6</button></li>
+                <li><button class="btn" onclick="filterSelection('AH-64')">AH-64</button></li>
+                <li><button class="btn" onclick="filterSelection('CH-47')">CH-47</button></li>
+            </ul>
+
+            <div class="clearfix"></div>
+            <span class="title_font fil_title" id="activities">
+                <i class='fas' id="fas3">&#xf072;</i>
+                Activities
+                </span>
+            <ul id="fil_activities">
+                <li><button class="btn" onclick="filterSelection('AH-6')">AH-6</button></li>
+                <li><button class="btn" onclick="filterSelection('AH-64')">AH-64</button></li>
+                <li><button class="btn" onclick="filterSelection('CH-47')">CH-47</button></li>
+            </ul> 
+        </div>
+
+
+
+
+        <div class="gal_content">
+            <div class="filterDiv Baluga A320 A321 A350 B-767 B-787 B-52 F-15EX AH-6 CH-47">
+                <div class="col-6 col-md-6 col-xl-6">
+                    <a href="#">
+                        <img src="img/G_beluga_01.jpg" alt="beluga">
+                    </a>
+                </div>
+                <div class="col-6 col-md-6 col-xl-6">
+                    <a href="#">
+                        <img src="img/G_beluga_05.jpg" alt="beluga">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+    
+                <div class="col-6 col-md-4 col-xl-4">
+                    <a href="#">
+                        <img src="img/G_beluga_04.jpg" alt="beluga">
+                    </a>
+                </div>
+                <div class="col-6 col-md-8 col-xl-8">
+                    <a href="#">
+                        <img src="img/G_beluga_03.jpg" alt="beluga" class="gal_1_4">
+                    </a> 
+                </div>
+                <div class="clearfix"></div>
+    
+                <div class="col-6 col-md-4 col-xl-4">
+                    <a href="#">
+                        <img src="img/G_beluga_02.png" alt="beluga">
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-xl-4">
+                    <a href="#">
+                        <img src="img/G_beluga_08.jpg" alt="beluga">
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-xl-4">
+                    <a href="#">
+                        <img src="img/G_beluga_06.jpg" alt="beluga">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-6 col-md-12 col-xl-12">
+                    <a href="#">
+                        <img src="img/G_beluga_07.jpg" alt="beluga" class="gal_1_8">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+    
+                <div class="col-6 col-md-6 col-xl-6">
+                    <a href="#">
+                        <img src="img/G_beluga_08.jpg" alt="beluga">
+                    </a>
+                </div>
+                <div class="col-6 col-md-6 col-xl-6">
+                    <a href="#">
+                        <img src="img/G_beluga_04.jpg" alt="beluga">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="filterDiv A220 A330 A380 B-747 B-777 C-17 FA-18 AH-64">
+                <div class="col-6 col-md-6 col-xl-6">
+                    <a href="#">
+                        <img src="img/G_220_08.jpg" alt="A320">
+                    </a>
+                </div>
+                <div class="col-6 col-md-6 col-xl-6">
+                    <a href="#">
+                        <img src="img/G_220_03.jpg" alt="A320">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+    
+                <div class="col-6 col-md-4 col-xl-4">
+                    <a href="#">
+                        <img src="img/G_220_01.jpg" alt="A320">
+                    </a>
+                </div>
+                <div class="col-6 col-md-8 col-xl-8">
+                    <a href="#">
+                        <img src="img/G_220_04.jpg" alt="A320" class="gal_1_4">
+                    </a> 
+                </div>
+                <div class="clearfix"></div>
+    
+                <div class="col-6 col-md-4 col-xl-4">
+                    <a href="#">
+                        <img src="img/G_220_06.jpg" alt="A320">
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-xl-4">
+                    <a href="#">
+                        <img src="img/G_220_01.jpg" alt="A320">
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-xl-4">
+                    <a href="#">
+                        <img src="img/G_220_07.jpg" alt="A320">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-6 col-md-12 col-xl-12">
+                    <a href="#">
+                        <img src="img/G_220_08.jpg" alt="A320" class="gal_1_8">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+    
+                <div class="col-6 col-md-6 col-xl-6">
+                    <a href="#">
+                        <img src="img/G_220_05.jpg" alt="A320">
+                    </a>
+                </div>
+                <div class="col-6 col-md-6 col-xl-6">
+                    <a href="#">
+                        <img src="img/G_220_02.jpg" alt="A320">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+           
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <ul>
+                <li class="footer_list list_item"><a href="#" class="text">Privacy &amp; Legal</a></li>
+                <li class="footer_list list_item"><a href="#" class="text">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/Galleries.js" text="text/javascript"></script>
+    <script src="js/jquery.js" text="text/javascript"></script>
+</body>
+</html>

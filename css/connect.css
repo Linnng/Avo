@@ -1,0 +1,91 @@
+.connect_message{
+    margin-bottom: 100px;
+}
+h3{
+    margin: 20px 0;
+    color: rgb(53, 53, 53);
+}
+.textingArea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0 80px;
+    position: relative;
+}
+input{
+    height: 40px;
+    border: 2px solid rgb(61, 61, 61);
+    padding: 0 8px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    font-size: 14px;
+    outline: 0;
+}
+textarea{
+    border: 2px solid rgb(61, 61, 61);
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px 8px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 180px;
+    min-height: 180px;
+    outline: 0;
+    margin-bottom: 30px;
+}
+.con_w48p{
+    width: 48%;
+}
+.con_w50p{
+    width: 50%;
+}
+.con_w100p{
+    width: 100%;
+}
+
+@media screen and (max-width: 767px){
+    .connect_message{
+        width: 75%;
+    }
+    .con_m_w100p{
+        width: 100%;
+    }
+    .con_btn{
+        width: 160px;
+        height: 44px;
+        color: #fff;
+        background-color: #aa5d5f;
+        border: 2px solid #aa5d5f;
+        box-sizing: border-box;
+        outline: 0;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (min-width: 768px){
+    .connect_message{
+        width: 80%;
+        margin-bottom: 80px;
+    }
+    .con_btn{
+        width: 160px;
+        height: 44px;
+        color: #fff;
+        background-color: #aa5d5f;
+        border: 2px solid #aa5d5f;
+        box-sizing: border-box;
+        outline: 0;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+@media screen and (min-width: 1200px){
+    .connect_message{
+        width: 60%;
+        
+    }
+}
